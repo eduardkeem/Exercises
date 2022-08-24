@@ -1,0 +1,21 @@
+
+
+function power(base, exponent) {
+    if (exponent == 0) {
+        return 1;
+    } else {
+        return base * power(base, exponent - 1);
+    }
+}
+    console.log(power(2, 3));
+
+
+    function pow(a, b) {
+        let result = a;
+        for (let i = 1; i < b; i++) {
+          result *= a;
+        }
+        return result;
+      }
+
+      console.log(pow(2,3));
